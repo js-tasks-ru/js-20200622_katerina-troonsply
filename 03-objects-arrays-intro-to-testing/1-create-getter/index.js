@@ -7,3 +7,4 @@ export function createGetter(path) {
   const paths = path.split('.');
   return (obj) => paths.reduce((result, item) => (result !== undefined) ? result[item] : result, obj);
 }
+
